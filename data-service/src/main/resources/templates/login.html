@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录界面</title>
+		<style type="text/css">
+			/* * {
+				border: solid 1px aquamarine;
+			} */
+
+			#login {
+				background-color: aliceblue;
+				position: fixed;
+				top: 30%;
+				left: 38%;
+				width: 24%;
+				height: 40%;
+				border-radius: 9px;
+			}
+				
+			#login h1,label,input{
+				border-radius: 0.5vw;
+				margin:0.75vw 0.25vw;
+				font-size: 1.2vw;
+				box-shadow: 0.10vw 0.10vw 0.10vw skyblue;
+			}
+		</style>
+		<script type="text/javascript">
+			function show() {
+				document.getElementById("login").display();
+
+			}
+		</script>
+	</head>
+	<body
+		th:style="'background-image: url(/static/images/main.jpg);background-size: cover;background-repeat: no-repeat;'">
+		<form action="login" method="post">
+			<div id="login">
+				<div>
+					<center>
+						<h1 style="font-size: 2vw;">登&nbsp;&nbsp;录</h1>
+						<div style="padding: 20px 5px;">
+							<label>用户名：</label><input type="text" name="username" id="" value="" /><br>
+							<label>密&nbsp;&nbsp;&nbsp;码：</label><input type="password" name="password" id="" value="" /><br>
+						</div>
+						<input type="submit" name="" id="" value="登录" /><span style="width:50px;display: inline-block;"></span>
+						<a href="register"><input type="button" name="" id="" value="注册" /></a>
+					</center>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

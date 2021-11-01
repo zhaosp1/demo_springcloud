@@ -1,0 +1,44 @@
+server:
+  port: 8030
+
+spring:
+  application:
+    name: data-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/jpa?serverTimezone=UTC&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 20133073
+  thymeleaf:
+    cache: true
+    check-template: true
+    check-template-location: true
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML
+    prefix: classpath:/templates/
+    suffix: .html
+    excluded-view-names:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  mvc:
+    static-path-pattern: /static/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.example.dataservice.bean.entity
+
+

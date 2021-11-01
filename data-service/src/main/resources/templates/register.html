@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>注册页面</title>
+<style>
+	body{
+		background-color:#EBEBEB;
+	}
+	.register{
+		margin: 100px auto;
+		border: #D9D3D3 1px dashed;
+		border-radius: 10px;
+		height: 500px;
+		width: 800px;
+	}
+table {
+	border: 1px solid beige;
+}
+span {
+	color: #66CCFF;
+}
+th {
+	background-color: gainsboro;
+}
+tr {
+	border: 1px solid beige;
+}
+td {
+	border: 1px solid aliceblue;
+}
+.redText {
+	color: red;
+}
+.redStar {
+	color: red;
+}
+</style>
+</head>
+<body>
+<!-- 8列-->
+<div class="register">
+	<p style="text-align: center;font-size: 24px">欢迎注册信息！</p>
+  <form name="form" accept-charset="utf-8"  action="save" method="post">
+    <table align="center" cellspacing="0">
+      <tr>
+        <th colspan="8" align="left">1.用户名和密码</th>
+      </tr>
+      <tr>
+        <td>用户名：</td>
+        <td colspan="2"><input type="text" name="username"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"><input type="button" value="检测用户名"/>
+          <span>5-15位，请使用英文(a-z、A-Z)、数字(0-9)</span></td>
+      </tr>
+      <tr>
+        <td>密&emsp;码：</td>
+        <td colspan="2"><input type="password" name="password"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"><span>5-15位，请使用英文(a-z)、数字(0-9)注意区分大小写;<br/>
+          密码不能与登录名相同;易记;难猜;</span></td>
+      </tr>
+      <tr>
+        <td>再次输入密码：</td>
+        <td colspan="2"><input type="password"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"><span>两次输入的密码必须一致</span></td>
+      </tr>
+      <tr>
+        <th colspan="8" align="left">2.姓名和联系方式</th>
+      </tr>
+      <tr>
+        <td>真实姓名：</td>
+        <td colspan="2"><input type="text" name="name"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"><input type="radio" checked="checked" name="sex" value="male"/>
+          先生
+          <input type="radio" name="sex" value="female"/>
+          小姐</td>
+      </tr>
+      <tr>
+        <td>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</td>
+        <td colspan="2"><input type="text" name="age"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"></td>
+      </tr>
+      <tr>
+        <td>电子邮箱：</td>
+        <td colspan="2"><input type="text"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"><span class="redText">非常重要！</span><br/>
+          <span>这是客户与您联系的首选方式，请一定填写真实。</span></td>
+      </tr>
+      <tr>
+        <td>手机号码：</td>
+        <td colspan="7"><input type="text" name="tel"/></td>
+      </tr>
+      <tr>
+        <th colspan="8" align="left">3.所属部门及其职位</th>
+      </tr>
+      <tr>
+        <td>所属部门：</td>
+        <td colspan="2"><input type="text" name="department"/>
+          <span class="redStar">*&emsp;</span></td>
+        <td colspan="5"></td>
+      </tr>
+    </table>
+	  <br><br><br>
+	  <center><input type="submit" value="提交"></center>
+  </form>
+</div>
+</body>
+</html>
