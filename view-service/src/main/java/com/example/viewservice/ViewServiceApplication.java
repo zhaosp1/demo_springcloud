@@ -11,9 +11,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @ServletComponentScan
 public class ViewServiceApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(ViewServiceApplication.class, args);
     }
-
 }

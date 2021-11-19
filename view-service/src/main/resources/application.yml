@@ -5,6 +5,19 @@ server:
 spring:
   application:
     name: view-service
+  dubbo:
+    application:
+      name: springboot-dubbo-demo
+    registry:
+      address: zookeeper://localhost
+      port: 2181
+    protocol:
+      name: dubbo
+      port: 20890
+    scan: com.example.viewservice.service
+    admin:
+      root:
+        password: root
 
 eureka:
   client:
