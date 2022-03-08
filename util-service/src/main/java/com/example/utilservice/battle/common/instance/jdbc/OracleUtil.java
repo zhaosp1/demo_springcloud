@@ -1,7 +1,8 @@
 package com.example.utilservice.battle.common.instance.jdbc;
 
 import cn.hutool.core.io.FileUtil;
-import com.example.battle.basal.util.JdbcUtil;
+import com.example.utilservice.battle.basal.util.JdbcUtil;
+
 
 import java.io.FileOutputStream;
 import java.sql.*;

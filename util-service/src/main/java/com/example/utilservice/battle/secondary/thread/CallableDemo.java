@@ -1,7 +1,7 @@
 package com.example.utilservice.battle.secondary.thread;
 
-import com.example.battle.basal.temp.Action;
-import com.example.battle.basal.temp.Temp;
+import com.example.utilservice.battle.basal.temp.Action;
+import com.example.utilservice.battle.basal.temp.Temp;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

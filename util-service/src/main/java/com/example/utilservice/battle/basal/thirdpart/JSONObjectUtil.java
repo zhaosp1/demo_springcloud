@@ -1,6 +1,7 @@
 package com.example.utilservice.battle.basal.thirdpart;
 
-import com.example.battle.common.pojo.User;
+
+import com.example.utilservice.battle.common.pojo.User;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 

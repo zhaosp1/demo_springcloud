@@ -1,0 +1,14 @@
+package com.example.dataservice.bean.model.part2.qiaojie;
+
+/**
+ * @author: zhaosp1
+ * @description:
+ * @solution: 编程思想()
+ * @version: 1.0
+ * @createDate: 2021/12/01 0:05
+ */
+public class ConcreteImplementorA implements Implementor {
+    public void OperationImpl() {
+        System.out.println("具体实现化(Concrete Implementor)角色被访问");
+    }
+}

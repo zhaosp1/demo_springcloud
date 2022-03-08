@@ -21,6 +21,8 @@ public class InnerClass {
   public void show(){
     System.out.println("测试方法！");
   }
+
+
   public static void main(String[] args) {
     //匿名类
     InnerClass test=new InnerClass(){
